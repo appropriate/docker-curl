@@ -1,6 +1,12 @@
 # docker-curl
 Alpine-based image with just curl
 
+## Usage
+
+```console
+$ docker run --rm appropriate/curl -fsSL https://www.google.com/
+```
+
 ## Tags
 
 * `appropriate/curl:3.1`: based on `alpine:3.1`, contains Curl 7.39.0
