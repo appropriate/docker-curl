@@ -1,5 +1,5 @@
 FROM alpine:latest
-RUN apk add --update curl && rm -rf /var/cache/apk/*
+RUN apk add --no-cache curl
 COPY entrypoint.sh /
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["curl"]
